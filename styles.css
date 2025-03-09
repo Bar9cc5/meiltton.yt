@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 20px;
+    color: #000000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    color: #d1ae6d;
+}
+
+.social-media a {
+    margin-left: 15px;
+    color: #000000; /* Цвет иконок */
+    font-size: 24px; /* Размер иконок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.social-media a:hover {
+    color: #d1ae6d; /* Цвет при наведении */
+}
+
+
+
+
+.container {
+    display: flex; /* Используем flexbox для горизонтального расположения */
+    background-color: #fff; /* Белый фон для контейнера */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    padding: 20px; /* Отступы внутри контейнера */
+}
+
+.photo-container {
+    max-width: 300px; /* Максимальная ширина для фото */
+}
+
+.model-photo {
+    width: 100%; /* Устанавливаем ширину изображения на 100% от контейнера */
+    height: auto; /* Автоматическая высота */
+    border-radius: 8px; /* Скругление углов изображения */
+}
+
+.info-container {
+    margin-left: 20px; /* Отступ слева от фотографии */
+}
+
+.info-container h2 {
+    color: #333; /* Цвет заголовка */
+}
+
+.info-container p {
+    color: #666; /* Цвет текста описания */
+}
+
+
+.album-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.album-button:hover {
+    background-color: #d1ae6d; /* Цвет фона при наведении */
+}
+
+
+
+
+.album-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; /* Расстояние между плитками */
+}
+
+.album-tile {
+    position: relative;
+    overflow: hidden; /* Скрываем лишнее при наведении */
+    border-radius: 8px; /* Закругленные углы плиток */
+}
+
+.album-photo {
+    width: 100%;
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    transition: transform 0.3s ease; /* Плавный эффект при наведении */
+}
+
+.album-tile:hover .album-photo {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
